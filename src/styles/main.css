@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold-accent: #D4AF37;
+  --deep-black: #0a0a0a;
+  --rich-black: #121212;
+  --charcoal: #1a1a1a;
+}
+
+body {
+  @apply bg-deep-black text-gray-100 min-h-screen font-sans antialiased;
+}
+
+.sidebar-link {
+  @apply flex items-center p-3 rounded-lg transition-all hover:bg-charcoal;
+}
+
+.dashboard-card {
+  @apply bg-rich-black p-6 rounded-xl border border-charcoal shadow-lg;
+}
+
+.btn-primary {
+  @apply bg-gold-accent text-rich-black px-6 py-3 rounded-lg font-medium hover:bg-yellow-600 transition-all;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded-lg;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-600;
+}
